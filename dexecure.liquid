@@ -1,0 +1,35 @@
+{% capture DEXECURE %}
+  {% comment %}
+    <!--
+    Convert a Shopify CDN path into a Dexecure path, with parameters.
+    -->
+  {% endcomment %}
+  {% if settings.enableDexecure %}
+    {% for i in (1..1) %}
+      {% comment %}
+        <!-- Check to make sure the src exists, and that Dexecure url theme settings is not blank. If blank, stop! -->
+      {% endcomment %}
+      {% unless src or settings.dexecureUrl != blank %}
+        {{ src }}
+        {% break %}
+      {% endunless %}
+
+      {% comment %}
+        <!-- Check to make sure the src has the Shopify CDN url in it. If it doesn't this does not need to run any further -->
+      {% endcomment %}
+      {% assign cdnUrl = settings.dexecureShopifyUrl | strip %}
+      {% unless src contains cdnUrl %}
+        {{ src }}
+        {% break %}
+      {% endunless %}
+
+      {% assign dexecureUrl = settings.dexecureUrl | strip %}
+
+      {% assign newSrc = src | strip | replace:cdnUrl,dexecureUrl | append:imgWithQuerystring %}
+    {% endfor %}
+
+    {{ newSrc | default:src }}
+  {% else %}
+    {{ src }}
+  {% endif %}
+{% endcapture %}{{ DEXECURE | strip | replace:'  ' | strip_newlines }}
