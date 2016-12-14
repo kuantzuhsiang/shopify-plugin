@@ -25,7 +25,7 @@ The first change lets you configure your Dexecure installation from inside Shopi
       "type": "text",
       "id": "dexecureUrl",
       "label": "Dexecure subdomain",
-      "info": "The subdomain you are given on the Dexecure platform. Example: `https:\/\/awesome-startup-name.dexecure.net`."
+      "info": "The subdomain you are given on the Dexecure platform. Example: `https:\/\/xxx.cloudfront.net`."
     },
     {
       "type": "text",
@@ -48,7 +48,7 @@ Now that you’ve set up your Shopify theme to work with Dexecure, you can enabl
 
 ```
 Enable Dexecure: Make sure this is checked.
-Dexecure subdomain: You would get this from Dexecure. It would be something like https://awesome-startup-name.dexecure.net
+Dexecure subdomain: You would get this from Dexecure. It would be something like https://xxx.cloudfront.net
 Shopify CDN domain: You’ll most likely not want to change this from the default value of //cdn.shopify.com.
 ```
 
