@@ -44,7 +44,7 @@ The second file adds a new Liquid tag that helps you generate Dexecure URLs. Thi
 
 ##Enabling the Dexecure Integration
 
-Now that you’ve set up your Shopify theme to work with Dexecure, you can enable Dexecure in your theme settings. Head to the `Online store > Themes > Customize theme`. Once there, you’ll see a `dexecure` option in the right-hand sidebar. Click on this to configure your Dexecure setup. It should look something like the following:
+Now that you’ve set up your Shopify theme to work with Dexecure, you can enable Dexecure in your theme settings. Head to the `Online store > Themes > Customize theme`. Once there, you’ll see a `dexecure` option in the left-hand sidebar. Click on this to configure your Dexecure setup. It should look something like the following:
 
 ```
 Enable Dexecure: Make sure this is checked.
