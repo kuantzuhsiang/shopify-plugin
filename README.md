@@ -67,6 +67,17 @@ At this point, you’re ready to change your existing theme’s assets to use De
 {% assign feat_img_url = product.featured_image | img_url:'master' %}
 {% include 'dexecure' src:feat_img_url %}
 ```
-
+####Before:
+```
+{{ 'collection5-3.png' | asset_url | img_tag }}
+```
+####After:
+```
+{% assign full_url_for_dexecure = 'collection10-1.png' | asset_url %}
+{% capture modified_dexecure_url %}
+{% include 'dexecure' src:full_url_for_dexecure %}
+{% endcapture %}
+{{modified_dexecure_url | strip | img_tag}}
+```
 ####Note:
 It’s a good idea to always use the master variant of Shopify’s images, and let Dexecure handle the resizing. That way, you’ll always get the best quality image possible.
