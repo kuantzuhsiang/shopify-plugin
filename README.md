@@ -1,3 +1,5 @@
+This is a random test change (will remove later)
+
 #Shopify Integration
 
 ##Shopify Theme Modification
