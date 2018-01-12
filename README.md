@@ -1,3 +1,5 @@
+This is a test (ignore this line)
+
 #Shopify Integration
 
 ##Shopify Theme Modification
