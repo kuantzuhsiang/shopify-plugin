@@ -6,7 +6,9 @@ To actually start serving your content with Dexecure, you’ll need to make two 
 
 You can access Shopify’s theme file editor by going to
 
-`Online store > Themes > Customize theme > Theme options > Edit HTML/CSS`
+`Online store > Themes > Actions > Edit code`
+
+You can also follow the instructions from [here](https://help.shopify.com/themes/customization).
 
 ###settings_schema.json
 
@@ -44,7 +46,7 @@ The second file adds a new Liquid tag that helps you generate Dexecure URLs. Thi
 
 ##Enabling the Dexecure Integration
 
-Now that you’ve set up your Shopify theme to work with Dexecure, you can enable Dexecure in your theme settings. Head to the `Online store > Themes > Customize theme`. Once there, you’ll see a `dexecure` option in the left-hand sidebar. Click on this to configure your Dexecure setup. It should look something like the following:
+Now that you’ve set up your Shopify theme to work with Dexecure, you can enable Dexecure in your theme settings. Head to the Online store > Themes > Customize. Once there, you’ll see a Theme settings option in the left-hand sidebar. Click on this. Head to the dexecure tab to configure your Dexecure setup. It should look something like the following:
 
 ```
 Enable Dexecure: Make sure this is checked.
