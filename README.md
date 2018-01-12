@@ -6,7 +6,9 @@ To actually start serving your content with Dexecure, you’ll need to make two 
 
 You can access Shopify’s theme file editor by going to
 
-`Online store > Themes > Customize theme > Theme options > Edit HTML/CSS`
+`Online store > Themes > Actions > Edit code`
+
+You can also follow the instructions from [here](https://help.shopify.com/themes/customization).
 
 ###settings_schema.json
 
